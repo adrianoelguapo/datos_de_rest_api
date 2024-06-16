@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+/* --- Vídeo de fondo --- */
+.background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/* --- Estilos para la cabecera --- */
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.titulo {
+  display: flex;
+  justify-content: flex-start;
+  width: 30%;
+  align-items: center;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 25px;
+  margin-left: 2.5%;
+  margin-top: 2.25%;
+}
+
+.titulo a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.titulo a:hover{
+  transform: scale(1.15);
+  color: lightgrey;
+}
+
+.opcionescabecera {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2.5%;
+  margin-left: -15%;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.opcionescabecera a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.opcionescabecera a:hover{
+  transform: scale(1.15);
+  color: lightgrey;
+}
+
+/* --- Estilos para el contenido --- */
+.contenido{
+  width: 100%;
+  margin-top: 10%;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+
+}
+
+.titulocontenido p{
+  text-align: center;
+  width: 100%;
+  font-size: 100px;
+}
+
+.descripcioncontenido p{
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+}
+
+.descripcionsobrenosotrosyproductos{
+  display: flex;
+  justify-content: center;
+}
+
+.descripcionsobrenosotrosyproductos p{
+  text-align: center;
+  width: 100%;
+  font-size: 25px;
+  font-family: "Dosis", sans-serif;
+  width: 80%;
+}
+
+/* --- Estilos para las tarjetas --- */
+.tarjetas {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.contenidotarjeta {
+  width: 100%;
+  background-image: linear-gradient(85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7%); /* https://cssgradient.io/gradient-backgrounds/ */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 7px 7px;
+}
+
+.nombretarjeta {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Audiowide", sans-serif;
+}
