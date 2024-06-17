@@ -1,5 +1,5 @@
 $(function () {
-    $.getJSON("https://random-data-api.com/api/users/random_user?size=8",function (datosJSON){
+    $.getJSON("https://random-data-api.com/api/users/random_user?size=12",function (datosJSON){
         let usuarios = datosJSON;
 
         for (let cadaUsuario of usuarios){

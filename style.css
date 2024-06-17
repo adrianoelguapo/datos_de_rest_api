@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 
-/* --- Vídeo de fondo --- */
+/* --- Vídeo de fondo -> https://www.w3schools.com/howto/howto_css_fullscreen_video.asp --- */
 .background {
   position: fixed;
   right: 0;
@@ -106,13 +106,12 @@
 
 /* --- Estilos para las tarjetas --- */
 .tarjetas {
-  margin-left: 10%;
+  margin-left: 5.2%;
   margin-top: 3%;
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
-  justify-content: center;
   justify-items: center;
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
@@ -122,17 +121,22 @@
 
 .tarjeta {
   width: 100%;
-  max-width: 300px;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 7px;
+  transition: transform 0.5s;
+  border: solid 3px rgb(255, 255, 255);
+}
+
+.tarjeta:hover {
+  transform: scale(1.035);
 }
 
 .contenidotarjeta {
   width: 100%;
-  background-image: linear-gradient(85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7%); /* https://cssgradient.io/gradient-backgrounds/ */
+  background-image: linear-gradient(85.2deg,  rgb(41, 12, 48) 7.5%, rgb(124, 2, 138) 88.7%); 
   color: white;
   display: flex;
   flex-direction: column;
@@ -144,4 +148,8 @@
   font-size: 20px;
   font-weight: bold;
   font-family: "Audiowide", sans-serif;
+}
+
+.puestotarjeta {
+  font-weight: bold;
 }
